@@ -17,7 +17,9 @@ public class CharacterSelectMenu : MonoBehaviour
             SelectableThumbnail newThumbnail = Instantiate(_selectableThumbnailPrefab);
             newThumbnail.transform.SetParent(_grid.transform);
             newThumbnail.Init(this, i);
+            newThumbnail.transform.localScale = Vector3.one;
             _allThumbnails.Add(newThumbnail);
+
         }
 
         _allThumbnails[0].Select();
