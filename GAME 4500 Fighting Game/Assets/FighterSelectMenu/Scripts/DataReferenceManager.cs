@@ -9,6 +9,7 @@ public class DataReferenceManager : MonoBehaviour
     public List<string> characterNames;
     public List<Sprite> characterThumbnails;
     public List<Sprite> characterPoses;
+    public List<Sprite> levelImages;
 
     private void Awake()
     {

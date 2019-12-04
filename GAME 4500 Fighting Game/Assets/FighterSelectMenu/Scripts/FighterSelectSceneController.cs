@@ -6,8 +6,24 @@ public class FighterSelectSceneController : MonoBehaviour
 {
     public static FighterSelectSceneController Instance;
 
+    [SerializeField] private GameObject _characterSelectContainer;
+    [SerializeField] private GameObject _levelSelectContainer;
+
     [SerializeField] private CharacterPreview _player1Preview;
     [SerializeField] private CharacterPreview _player2Preview;
+
+    [SerializeField] private CharacterGridNavigator _player1Nav;
+    [SerializeField] private CharacterGridNavigator _player2Nav;
+    [SerializeField] private LevelGridNavigator _levelNav;
+
+    [HideInInspector] public bool isOnCharacterSelect;
+
+    [SerializeField] private KeyCode _back;
+    [SerializeField] private KeyCode _confirm;
+
+    [HideInInspector] public int p1CharacterIndex;
+    [HideInInspector] public int p2CharacterIndex;
+    [HideInInspector] public int levelIndex;
 
     void Awake()
     {
@@ -15,10 +31,49 @@ public class FighterSelectSceneController : MonoBehaviour
         {
             Instance = this;
         }
+
+        isOnCharacterSelect = true;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(_confirm))
+        {
+            if (isOnCharacterSelect)
+            {
+                _player1Nav.HandleSelected();
+                _player2Nav.HandleSelected();
+                _characterSelectContainer.SetActive(false);
+                _levelSelectContainer.SetActive(true);
+                isOnCharacterSelect = false;
+            }
+            else
+            {
+                _levelNav.HandleSelected();
+                print("START FIGHT. " + 
+                    "p1CharacterIndex: " + p1CharacterIndex + " | " +
+                    "p2CharacterIndex: " + p2CharacterIndex + " | " +
+                    "levelIndex: " + levelIndex);
+            }
+        }
+        else if (Input.GetKeyDown(_back))
+        {
+            if (!isOnCharacterSelect)
+            {
+                _characterSelectContainer.SetActive(true);
+                _levelSelectContainer.SetActive(false);
+                isOnCharacterSelect = true;
+            }
+        }
     }
 
     public void UpdatePlayer1Preview(int index)
     {
         _player1Preview.UpdateCharacterPose(index);
+    }
+
+    public void UpdatePlayer2Preview(int index)
+    {
+        _player2Preview.UpdateCharacterPose(index);
     }
 }
