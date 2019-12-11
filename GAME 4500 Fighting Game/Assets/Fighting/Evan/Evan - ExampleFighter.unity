@@ -584,5 +584,71 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 5c75b946c0ee1e54fb63b4b5956fff70,
         type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: lightKickSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: abefee207a46b3348a7f6f866d8c5bf4,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: lightKickSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 65cbbf1ca78900145a4441eb4a128581,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: lightKickSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 070bbb618cb3cdc4989da2022eef15d4,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: lightKickSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: abefee207a46b3348a7f6f866d8c5bf4,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: blockSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 46068565900ba3640b25d0f9d324c87a,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: lightPunchSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 22e6d6fab1c29894ca80b6d32488398a,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: lightPunchSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 29c6d07992d48a449845fdadaa08a9df,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: lightPunchSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0311934ad1ab9eb47be2c57e51fc93d9,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: lightPunchSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: c8c465620faafdb44bd4fe9319258575,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: jumpSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3474e3156cd18cc4988d95add677a4da,
+        type: 3}
+    - target: {fileID: 627700409210549662, guid: 39726385cd2943b4d84e01549ebdaa5e,
+        type: 3}
+      propertyPath: jumpSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4c249fe3f7ae2dc4cb239807b3c47ab2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39726385cd2943b4d84e01549ebdaa5e, type: 3}
