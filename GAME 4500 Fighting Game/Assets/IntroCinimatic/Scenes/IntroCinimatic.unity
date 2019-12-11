@@ -206,7 +206,7 @@ RectTransform:
   m_GameObject: {fileID: 306286112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_Children: []
   m_Father: {fileID: 499167258}
   m_RootOrder: 0
@@ -214,7 +214,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 676.8, y: 451.2}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &306286114
 MonoBehaviour:
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 306286115}
-  videoToPlay: {fileID: 32900000, guid: 52547469bed5ef64e8a61ad58968f89b, type: 3}
+  videoToPlay: {fileID: 32900000, guid: d636639e85e61f842b5c767b929ad73a, type: 3}
 --- !u!114 &306286115
 MonoBehaviour:
   m_ObjectHideFlags: 0

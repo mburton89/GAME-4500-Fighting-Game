@@ -874,25 +874,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterNames:
-  - Danny
-  - Josh
-  - Daniel
-  - Robert
-  - Mark
-  - Burt
-  - Zach
-  - Evan
   - Alec
+  - Daniel
+  - Danny
+  - Evan
+  - Josh
+  - Mark
+  - Robert
+  - Zach
+  - Matt
   characterThumbnails:
-  - {fileID: 21300000, guid: fd86fa7674685db46b3a3e40df80f776, type: 3}
-  - {fileID: 21300000, guid: 4c95b8c40f94ae846b57879a1f4d2043, type: 3}
-  - {fileID: 21300000, guid: 9ae4d9d5ebb44ee4c98bb6a74b2866ad, type: 3}
-  - {fileID: 21300000, guid: 0fbc738e9fa7dc149a014f13ebf90b33, type: 3}
-  - {fileID: 21300000, guid: 32b6ddad0ebc2af4ca9f80c1b252e0ca, type: 3}
-  - {fileID: 21300000, guid: d41703b9ecc20cf4493696bd0879f1cd, type: 3}
-  - {fileID: 21300000, guid: d41703b9ecc20cf4493696bd0879f1cd, type: 3}
-  - {fileID: 21300000, guid: d41703b9ecc20cf4493696bd0879f1cd, type: 3}
-  - {fileID: 21300000, guid: d41703b9ecc20cf4493696bd0879f1cd, type: 3}
+  - {fileID: 21300000, guid: 5d84bcb3677a4dd4cbb2fbcf3d083813, type: 3}
+  - {fileID: 21300000, guid: 8439348a35c5a4c4dabb71cd78bfdf7f, type: 3}
+  - {fileID: 21300000, guid: fb556fdb7fd19c941987ac4409b63e9c, type: 3}
+  - {fileID: 21300000, guid: 288ff4f5f8e96b64eb9250afb80c4d7b, type: 3}
+  - {fileID: 21300000, guid: 9d7fe544a36cf284bac19367597c1d6e, type: 3}
+  - {fileID: 21300000, guid: 1d75eb9b34eba8346aaa735c08bd174f, type: 3}
+  - {fileID: 21300000, guid: cae9b6be958f25945a82c43668f8d33c, type: 3}
+  - {fileID: 21300000, guid: cc55fd292f3b48b4ea4ef24654d73e31, type: 3}
+  - {fileID: 21300000, guid: dfafec39ae27ded489a69e629b4f3969, type: 3}
   characterPoses:
   - {fileID: 21300000, guid: 048208fd4d79c8e4cb6af30761f3f2c3, type: 3}
   - {fileID: 21300000, guid: 99e0e18d6bfd5d64b81cbadf700ab83e, type: 3}
