@@ -6,6 +6,8 @@ TextureImporter:
     21300002: mark-kick_1
     21300004: mark-kick_2
     21300006: mark-kick_3
+    21300008: mark-kick_4
+    21300010: mark-kick_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -135,18 +137,18 @@ TextureImporter:
       name: mark-kick_0
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 16
-        width: 82
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 84
+        height: 217
+      alignment: 9
+      pivot: {x: 0.4315005, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08d7079164c57ae4dbc5a5d387cd8320
+      spriteID: 697679f921f552345afbcb7b454b76f4
       vertices: []
       indices: 
       edges: []
@@ -156,17 +158,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 249
-        y: 15
+        y: 14
         width: 84
         height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.15974717, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e70487818eeca044bd63c99847b9568
+      spriteID: 39af45ec1ee3b544ab563a32badec730
       vertices: []
       indices: 
       edges: []
@@ -176,17 +178,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 444
-        y: 15
+        y: 12
         width: 75
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 228
+      alignment: 9
+      pivot: {x: 0.31643963, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c4889eaa7f62f249953af16551e3a9c
+      spriteID: a90ce821001083840b66f95ae1d32627
       vertices: []
       indices: 
       edges: []
@@ -195,18 +197,18 @@ TextureImporter:
       name: mark-kick_3
       rect:
         serializedVersion: 2
-        x: 703
-        y: 15
-        width: 166
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 16
+        width: 169
+        height: 214
+      alignment: 9
+      pivot: {x: 0.3099423, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0dc88ae9dbe63d4a8f6c237b996a6f2
+      spriteID: acdeff134e4c1cc4e8cf8cbb29bdf936
       vertices: []
       indices: 
       edges: []
