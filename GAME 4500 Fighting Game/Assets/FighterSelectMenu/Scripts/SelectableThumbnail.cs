@@ -13,11 +13,16 @@ public class SelectableThumbnail : MonoBehaviour
 
     private int _characterIndex;
 
-    public void Init(CharacterSelectMenu characterSelectMenu, int characterIndex)
+    [SerializeField] private GameObject _p1Tab;
+    [SerializeField] private GameObject _p2Tab;
+
+    public void Init(CharacterSelectMenu characterSelectMenu, int characterIndex, Transform parent)
     {
         _characterSelectMenu = characterSelectMenu;
         _characterIndex =  characterIndex;
         _characterThumbnail.sprite = DataReferenceManager.Instance.characterThumbnails[characterIndex];
+        transform.SetParent(parent);
+        transform.localScale = Vector3.one;
     }
 
     private void OnEnable()
@@ -30,9 +35,31 @@ public class SelectableThumbnail : MonoBehaviour
         FighterSelectSceneController.Instance.UpdatePlayer1Preview(_characterIndex);
     }
 
-    public void Select()
+    public void Select(bool isPlayer1)
     {
-        _button.Select();
-        FighterSelectSceneController.Instance.UpdatePlayer1Preview(_characterIndex);
+        if (isPlayer1)
+        {
+            _button.Select();
+            FighterSelectSceneController.Instance.UpdatePlayer1Preview(_characterIndex);
+            _p1Tab.SetActive(true);
+        }
+        else
+        {
+            _button.Select();
+            FighterSelectSceneController.Instance.UpdatePlayer2Preview(_characterIndex);
+            _p2Tab.SetActive(true);
+        }
+    }
+
+    public void Deselect(bool isPlayer1)
+    {
+        if (isPlayer1)
+        {
+            _p1Tab.SetActive(false);
+        }
+        else
+        {
+            _p2Tab.SetActive(false);
+        }
     }
 }
