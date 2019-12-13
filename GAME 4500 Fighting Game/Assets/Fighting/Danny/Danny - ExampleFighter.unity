@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 2094968062}
   - component: {fileID: 2094968063}
   m_Layer: 8
-  m_Name: Fighter - Alec
+  m_Name: Fighter - Danny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,8 +378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.23}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -5.94, y: -1.44}
+  m_SizeDelta: {x: 0.156, y: 0.156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2094968062
 SpriteRenderer:
@@ -418,7 +418,7 @@ SpriteRenderer:
   m_SortingLayerID: 150659803
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 853b1eae60c843548918ef2d67b68eac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35d214ae4a7007544987233df05b7735, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -443,23 +443,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentFrame: {fileID: 2094968062}
   idleSprites:
-  - {fileID: 21300000, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
-  - {fileID: 21300002, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
-  - {fileID: 21300004, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
+  - {fileID: 21300000, guid: dec7e282c5003a9478327086805f83a8, type: 3}
+  - {fileID: 21300000, guid: 35d214ae4a7007544987233df05b7735, type: 3}
+  - {fileID: 21300000, guid: 7fe770c25f114524c9601c198f0a5043, type: 3}
   lightPunchSprites:
-  - {fileID: 21300000, guid: 5841a75d8218d974d989a3d704f567d8, type: 3}
-  - {fileID: 21300002, guid: 5841a75d8218d974d989a3d704f567d8, type: 3}
-  - {fileID: 21300004, guid: 5841a75d8218d974d989a3d704f567d8, type: 3}
-  - {fileID: 21300006, guid: 5841a75d8218d974d989a3d704f567d8, type: 3}
+  - {fileID: 21300000, guid: 7ddf42da1bb1a0f45a2fe97ac8bc5a5f, type: 3}
+  - {fileID: 21300000, guid: 467a8053ee32bbc4ea3df62d8b90bcc2, type: 3}
+  - {fileID: 21300000, guid: cc6ff9dd409a37249b26490033299879, type: 3}
+  - {fileID: 21300000, guid: 41cabb6842116d141995fcbe2520f002, type: 3}
   lightKickSprites:
-  - {fileID: 21300000, guid: bd7bbaed1fc25b445a6d503bd54450aa, type: 3}
-  - {fileID: 21300006, guid: bd7bbaed1fc25b445a6d503bd54450aa, type: 3}
-  - {fileID: 21300004, guid: bd7bbaed1fc25b445a6d503bd54450aa, type: 3}
-  - {fileID: 21300002, guid: bd7bbaed1fc25b445a6d503bd54450aa, type: 3}
+  - {fileID: 21300000, guid: 81aa3e3efd0be4c499a759aea3fd3d01, type: 3}
+  - {fileID: 21300000, guid: c933f35bdbbef3b4a91bf90248ae3194, type: 3}
+  - {fileID: 21300000, guid: bbec907774820d84fa7da42f75f09148, type: 3}
+  - {fileID: 21300000, guid: cca3206f0cc8bfa4ba2ade9e52c632c0, type: 3}
   jumpSprites:
-  - {fileID: 21300000, guid: 3c9f4c41583b3a44794f93a3ce95997b, type: 3}
-  - {fileID: 21300002, guid: 3c9f4c41583b3a44794f93a3ce95997b, type: 3}
-  blockSprite: {fileID: 21300000, guid: 4639bf96f05979f438994390a773d04d, type: 3}
+  - {fileID: 21300000, guid: dab2fd93b29cf304f8cbc597b0bc53eb, type: 3}
+  - {fileID: 21300000, guid: 2dec340414ffc424bb43e13fb51160c8, type: 3}
+  blockSprite: {fileID: 21300000, guid: 3857fcf1f4e94ae48a2d7e86625fac44, type: 3}
   idleFrameDuration: 0.25
   punchFrameDuration: 0.15
   blockFrameDuration: 0.25
