@@ -99,23 +99,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentFrame: {fileID: 8783713728008185350}
   idleSprites:
-  - {fileID: 21300000, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
-  - {fileID: 21300002, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
-  - {fileID: 21300004, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
+  - {fileID: 21300000, guid: 25695e44665af8c4c9b25101bf309d94, type: 3}
+  - {fileID: 21300000, guid: 74dcbb6838f216643938e36db3742f0f, type: 3}
+  - {fileID: 21300000, guid: e60387d0b984adb40a94fc2dc10f05d9, type: 3}
   lightPunchSprites:
-  - {fileID: 21300000, guid: 5841a75d8218d974d989a3d704f567d8, type: 3}
-  - {fileID: 21300002, guid: 5841a75d8218d974d989a3d704f567d8, type: 3}
-  - {fileID: 21300004, guid: 5841a75d8218d974d989a3d704f567d8, type: 3}
-  - {fileID: 21300006, guid: 5841a75d8218d974d989a3d704f567d8, type: 3}
+  - {fileID: 21300000, guid: f4a7b051c19746b47bd0b35e93df2191, type: 3}
+  - {fileID: 21300000, guid: ed5a7d234f416f24cbba35737484ae56, type: 3}
+  - {fileID: 21300000, guid: 7e69dca1558ebdb4eb6a0d714d03ca3a, type: 3}
+  - {fileID: 21300000, guid: 52f7a900f1c602946a739cef7151fc44, type: 3}
   lightKickSprites:
-  - {fileID: 21300000, guid: bd7bbaed1fc25b445a6d503bd54450aa, type: 3}
-  - {fileID: 21300006, guid: bd7bbaed1fc25b445a6d503bd54450aa, type: 3}
-  - {fileID: 21300004, guid: bd7bbaed1fc25b445a6d503bd54450aa, type: 3}
-  - {fileID: 21300002, guid: bd7bbaed1fc25b445a6d503bd54450aa, type: 3}
+  - {fileID: 21300000, guid: c2bbab6eb0050504c95c27f9f0f429c7, type: 3}
+  - {fileID: 21300000, guid: 0d88b35eb4c80b642927d62fcc64cfce, type: 3}
+  - {fileID: 21300000, guid: 55d280590d2183841a880820b989965f, type: 3}
+  - {fileID: 21300000, guid: a5935533c15df654ea29dfd80be77d46, type: 3}
   jumpSprites:
-  - {fileID: 21300000, guid: 3c9f4c41583b3a44794f93a3ce95997b, type: 3}
-  - {fileID: 21300002, guid: 3c9f4c41583b3a44794f93a3ce95997b, type: 3}
-  blockSprite: {fileID: 21300000, guid: 4639bf96f05979f438994390a773d04d, type: 3}
+  - {fileID: 21300000, guid: c9caf54ecf752134ab3e4fead526e169, type: 3}
+  - {fileID: 21300000, guid: 2530a08366a2cdf48a78426d41f59cc0, type: 3}
+  blockSprite: {fileID: 21300000, guid: c6cc3a094e792c349956bd5aa507ef43, type: 3}
   idleFrameDuration: 0.25
   punchFrameDuration: 0.15
   blockFrameDuration: 0.25
