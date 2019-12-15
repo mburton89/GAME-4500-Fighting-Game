@@ -25,6 +25,8 @@ public class FighterSelectSceneController : MonoBehaviour
     [HideInInspector] public int p2CharacterIndex;
     [HideInInspector] public int levelIndex;
 
+    [SerializeField] private AudioSource audio;
+
     void Awake()
     {
         if (Instance == null)
@@ -46,6 +48,7 @@ public class FighterSelectSceneController : MonoBehaviour
                 _characterSelectContainer.SetActive(false);
                 _levelSelectContainer.SetActive(true);
                 isOnCharacterSelect = false;
+                StartCoroutine(confirmAudio());
             }
             else
             {
@@ -63,6 +66,8 @@ public class FighterSelectSceneController : MonoBehaviour
                 _characterSelectContainer.SetActive(true);
                 _levelSelectContainer.SetActive(false);
                 isOnCharacterSelect = true;
+                _player1Preview.PlayIdleAnimation();
+                _player2Preview.PlayIdleAnimation();
             }
         }
     }
@@ -75,5 +80,14 @@ public class FighterSelectSceneController : MonoBehaviour
     public void UpdatePlayer2Preview(int index)
     {
         _player2Preview.UpdateCharacterPose(index);
+    }
+
+    private IEnumerator confirmAudio()
+    {
+        audio.clip = DataReferenceManager.Instance.characterConfirmVO[p1CharacterIndex];
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        audio.clip = DataReferenceManager.Instance.characterConfirmVO[p2CharacterIndex];
+        audio.Play();
     }
 }
