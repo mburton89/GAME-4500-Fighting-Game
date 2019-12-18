@@ -441,7 +441,7 @@ RectTransform:
   - {fileID: 1532932947}
   - {fileID: 2059847046}
   m_Father: {fileID: 1787597034}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -957,7 +957,7 @@ RectTransform:
   m_Children:
   - {fileID: 754990813}
   m_Father: {fileID: 1787597034}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1088,7 +1088,7 @@ RectTransform:
   m_Children:
   - {fileID: 1893209862}
   m_Father: {fileID: 1787597034}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1687,23 +1687,25 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Alec Runge - Music & SFX
 
-    Zach Ridings - Creative Director / Animator
+    Justin Bryant - Intro Music
+
+    Zach Ridings - Lead Animator
 
     Josh Ruble - Narrative / intro
 
-    Solomon killerbrew - Artist
-
-    Daniel Schuchardt- UI Designer
+    Daniel Schuchardt - UI Designer
 
     Danny Hook - UI Designer / Animator
 
-    Evan Bremer - Photographer
+    Evan Bremer - Animator
 
-    Robert Ferguson - Photographer
+    Solomon killerbrew - Artist
+
+    Robert Ferguson - Artist
 
     Mark Watson - Gameplay Developer
 
-    Matt Burton - UI Developer / Scrum Master'
+    Matt Burton - Developer / Scrum Master'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82487b56892484e4ba85a4b73ccb7d15, type: 2}
   m_sharedMaterial: {fileID: 21197903337372802, guid: 82487b56892484e4ba85a4b73ccb7d15,
@@ -1732,8 +1734,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 38
+  m_fontSizeBase: 38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1773,12 +1775,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 958054780}
-    characterCount: 327
+    characterCount: 328
     spriteCount: 0
-    spaceCount: 54
-    wordCount: 50
+    spaceCount: 57
+    wordCount: 54
     linkCount: 0
-    lineCount: 10
+    lineCount: 11
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -2131,7 +2133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1246557301
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2761,7 +2763,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: start
+  m_text: Fight
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82487b56892484e4ba85a4b73ccb7d15, type: 2}
   m_sharedMaterial: {fileID: 21197903337372802, guid: 82487b56892484e4ba85a4b73ccb7d15,
@@ -3197,9 +3199,9 @@ RectTransform:
   - {fileID: 1911961536}
   - {fileID: 1269751686}
   - {fileID: 319895198}
+  - {fileID: 350746513}
   - {fileID: 845446460}
   - {fileID: 870545398}
-  - {fileID: 350746513}
   m_Father: {fileID: 544293620}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3368,7 +3370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.6}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -117.3, y: 188.93}
+  m_AnchoredPosition: {x: -117.3, y: 220.29}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836094376

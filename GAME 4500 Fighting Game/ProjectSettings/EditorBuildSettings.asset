@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FighterSelectMenu/Scenes/FighterSelectMenu.unity
     guid: 9cf67e1cde62ea74aa739ae88fff20a9
+  - enabled: 1
+    path: Assets/Fighting/Scenes/FightScene.unity
+    guid: 4f9fad596c48ee04986b9e783b15ae12
   m_configObjects: {}

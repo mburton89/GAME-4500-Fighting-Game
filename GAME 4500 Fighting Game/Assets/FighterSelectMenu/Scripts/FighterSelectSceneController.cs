@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FighterSelectSceneController : MonoBehaviour
 {
@@ -37,6 +38,15 @@ public class FighterSelectSceneController : MonoBehaviour
         isOnCharacterSelect = true;
     }
 
+    private void Start()
+    {
+        if (MusicManager.Instance.musicAudioSource.clip != MusicManager.Instance.tracks[4])
+        {
+            MusicManager.Instance.musicAudioSource.clip = MusicManager.Instance.tracks[4];
+            MusicManager.Instance.musicAudioSource.Play();
+        }
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(_confirm))
@@ -57,6 +67,11 @@ public class FighterSelectSceneController : MonoBehaviour
                     "p1CharacterIndex: " + p1CharacterIndex + " | " +
                     "p2CharacterIndex: " + p2CharacterIndex + " | " +
                     "levelIndex: " + levelIndex);
+
+                DataReferenceManager.Instance.p1Index = p1CharacterIndex;
+                DataReferenceManager.Instance.p2Index = p2CharacterIndex;
+                DataReferenceManager.Instance.levelIndex = levelIndex;
+                SceneManager.LoadScene(3);
             }
         }
         else if (Input.GetKeyDown(_back))

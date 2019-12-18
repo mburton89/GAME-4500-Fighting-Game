@@ -24,11 +24,22 @@ public class DataReferenceManager : MonoBehaviour
 
     public List<AudioClip> characterConfirmVO;
 
+    public List<GameObject> fighterPrefabs;
+
+    public int p1Index;
+    public int p2Index;
+    public int levelIndex;
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
 
         idleSprites = new List<List<Sprite>>();

@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 8783713728008185348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -123,3 +123,7 @@ MonoBehaviour:
   jumpHeight: 3.5
   jumpUpEase: 21
   jumpDownEase: 20
+  _body: {fileID: 0}
+  _kickDistance: 3.7
+  _kickHeight: -1.8
+  _sfx: []
