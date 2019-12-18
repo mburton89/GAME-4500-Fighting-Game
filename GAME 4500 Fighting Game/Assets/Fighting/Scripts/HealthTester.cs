@@ -8,7 +8,7 @@ public class HealthTester : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            HealthManager.Instance.DecreaseHealth(.1f);
+            HealthManager.Instance.DecreaseP1Health(.1f);
         }
     }
 }

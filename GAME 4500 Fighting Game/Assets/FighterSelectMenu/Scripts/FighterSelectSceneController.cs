@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FighterSelectSceneController : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class FighterSelectSceneController : MonoBehaviour
     [HideInInspector] public int p2CharacterIndex;
     [HideInInspector] public int levelIndex;
 
+    [SerializeField] private AudioSource audio;
+
     void Awake()
     {
         if (Instance == null)
@@ -33,6 +36,15 @@ public class FighterSelectSceneController : MonoBehaviour
         }
 
         isOnCharacterSelect = true;
+    }
+
+    private void Start()
+    {
+        if (MusicManager.Instance.musicAudioSource.clip != MusicManager.Instance.tracks[4])
+        {
+            MusicManager.Instance.musicAudioSource.clip = MusicManager.Instance.tracks[4];
+            MusicManager.Instance.musicAudioSource.Play();
+        }
     }
 
     private void Update()
@@ -46,6 +58,7 @@ public class FighterSelectSceneController : MonoBehaviour
                 _characterSelectContainer.SetActive(false);
                 _levelSelectContainer.SetActive(true);
                 isOnCharacterSelect = false;
+                StartCoroutine(confirmAudio());
             }
             else
             {
@@ -54,6 +67,11 @@ public class FighterSelectSceneController : MonoBehaviour
                     "p1CharacterIndex: " + p1CharacterIndex + " | " +
                     "p2CharacterIndex: " + p2CharacterIndex + " | " +
                     "levelIndex: " + levelIndex);
+
+                DataReferenceManager.Instance.p1Index = p1CharacterIndex;
+                DataReferenceManager.Instance.p2Index = p2CharacterIndex;
+                DataReferenceManager.Instance.levelIndex = levelIndex;
+                SceneManager.LoadScene(3);
             }
         }
         else if (Input.GetKeyDown(_back))
@@ -63,6 +81,8 @@ public class FighterSelectSceneController : MonoBehaviour
                 _characterSelectContainer.SetActive(true);
                 _levelSelectContainer.SetActive(false);
                 isOnCharacterSelect = true;
+                _player1Preview.PlayIdleAnimation();
+                _player2Preview.PlayIdleAnimation();
             }
         }
     }
@@ -75,5 +95,14 @@ public class FighterSelectSceneController : MonoBehaviour
     public void UpdatePlayer2Preview(int index)
     {
         _player2Preview.UpdateCharacterPose(index);
+    }
+
+    private IEnumerator confirmAudio()
+    {
+        audio.clip = DataReferenceManager.Instance.characterConfirmVO[p1CharacterIndex];
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        audio.clip = DataReferenceManager.Instance.characterConfirmVO[p2CharacterIndex];
+        audio.Play();
     }
 }
