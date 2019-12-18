@@ -7,6 +7,14 @@ public class FightManager : MonoBehaviour
     public GameObject Player1;
     public GameObject Player2;
 
+    private int player1points = 0;
+    private int player2points = 0;
+
+    // Timer
+    int Round = 1;
+
+
+
     private bool _p1IsFacingRight;
     //private bool _hasFlipped;
 
@@ -44,6 +52,30 @@ public class FightManager : MonoBehaviour
                 _p1IsFacingRight = false;
             }
         }
+
+        //if (Player1.GetComponent(FighterStats.health =< 0) || (Player2.GetComponent(FighterStats.health =< 0))
+            //{
+        //}
+
+        if (Player1.GetComponent<FighterStats>().health <= 0 || Player2.GetComponent<FighterStats>().health <= 0)
+        {
+            //TODO DO stuff
+            if (Player1.GetComponent<FighterStats>().health < (Player1.GetComponent<FighterStats>().health))
+                //If Player 1 has less health (died first? lol) than player 2
+            {
+               player1points = player1points ++ 1;
+            }
+            else
+                player2points = player1points ++ 1;
+            if (Round != 3)
+                // if it's already Round 3 we don't want to go to Round 4
+            {
+                Round = Round++ 1;
+            }
+            
+        }
+        }
+
     }
 
     void Flip(Transform player)
