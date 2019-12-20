@@ -345,4 +345,11 @@ public class FighterAnimationController : MonoBehaviour
         _sfxSource.clip = _sfx[2];
         _sfxSource.Play();
     }
+
+    public void TwirlAway()
+    {
+        transform.DOMove(new Vector3(10f, 10f, 1f), 1f, false);
+        transform.DORotate(new Vector3(0, 0, 900f), 1f, RotateMode.Fast);
+    }
 }
+
