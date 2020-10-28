@@ -26,11 +26,21 @@ public class HealthManager : MonoBehaviour
     {
         p1Health -= amountToDecrease;
         p1HealthBar.fillAmount = p1Health;
+
+        if (p1Health <= 0)
+        {
+            KOManager.Instance.ShowWin(false);
+        }
     }
 
     public void DecreaseP2Health(float amountToDecrease)
     {
         p2Health -= amountToDecrease;
         p2HealthBar.fillAmount = p2Health;
+
+        if (p2Health <= 0)
+        {
+            KOManager.Instance.ShowWin(true);
+        }
     }
 }

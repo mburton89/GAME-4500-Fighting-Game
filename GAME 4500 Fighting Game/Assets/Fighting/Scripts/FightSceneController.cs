@@ -26,6 +26,7 @@ public class FightSceneController : MonoBehaviour
         p1FighterAnimation.GetComponent<FighterAnimationController>().EstablishP1Controls();
         p1FighterAnimation.transform.SetParent(p1CharacterController.transform);
         p1FighterAnimation.transform.localPosition = Vector3.zero;
+        KOManager.Instance.p1 = p1FighterAnimation.GetComponent<FighterAnimationController>();
 
         p2FighterAnimation = Instantiate(DataReferenceManager.Instance.fighterPrefabs[DataReferenceManager.Instance.p2Index] as GameObject);
         p2FighterAnimation.transform.localPosition = new Vector3(fighterPosition.x, fighterPosition.y, 0);
@@ -34,6 +35,7 @@ public class FightSceneController : MonoBehaviour
         p2FighterAnimation.GetComponent<FighterAnimationController>().EstablishP2Controls();
         p2FighterAnimation.transform.SetParent(p2CharacterController.transform);
         p2FighterAnimation.transform.localPosition = Vector3.zero;
+        KOManager.Instance.p2 = p2FighterAnimation.GetComponent<FighterAnimationController>();
 
         MusicManager.Instance.SelectTrack(DataReferenceManager.Instance.levelIndex);
     }

@@ -1207,9 +1207,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 18df09c44cbfcbc4887406f36d46f9df, type: 3}
   - {fileID: 21300000, guid: be7123c6a8882444b860275eecfa3393, type: 3}
   alecIdle:
-  - {fileID: 21300000, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
-  - {fileID: 21300002, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
-  - {fileID: 21300004, guid: 301b029d89a25a94fb1f30f02223ad94, type: 3}
+  - {fileID: 21300000, guid: 0238f537a833a3b41a9e50e9815835fa, type: 3}
+  - {fileID: 21300000, guid: 4a4d052c1b484cd4998ba1f44fdb7825, type: 3}
+  - {fileID: 21300000, guid: 8e383d6a9235290429f47ef73eca75ce, type: 3}
   danielIdle:
   - {fileID: 21300000, guid: 25695e44665af8c4c9b25101bf309d94, type: 3}
   - {fileID: 21300000, guid: 74dcbb6838f216643938e36db3742f0f, type: 3}
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fbd5eee11d1d6dd4a83d18a135a06730, type: 3}
   - {fileID: 8300000, guid: 69598459407613b48b15f41b63fee899, type: 3}
   - {fileID: 8300000, guid: 550fe721628d76740bc794b2c89e2147, type: 3}
-  - {fileID: 8300000, guid: 38721084bf7c13444a9dd2f02062b055, type: 3}
+  - {fileID: 8300000, guid: 552ef648855938147814bf6cb0f4dfbe, type: 3}
   - {fileID: 8300000, guid: 00df9000501aef54cabfd6ca690d33b8, type: 3}
   fighterPrefabs:
   - {fileID: 1564678191636672880, guid: 9fd0d45617d33a743b1a4004b8fe435e, type: 3}
